@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo bootstrap</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+			.customDiv{
+				margin:10px;
+				min-height:50px;
+				background-color:silver;
+				text-align:center;
+				font-size:large;
+				padding:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-md-12">
+				<div class="jumbotron text-center">
+					<h1>My First Bootstrap Page </h1>
+					<p>Resize this responsive page to see the effect</p>
+				</div>
+			</div>
+			<div class="row "> <!-- Grid System -->
+				<div class="col-md-3 col-lg-9">
+					<div class="customDiv">Column1</div>
+				</div>
+				<div class="col-md-3 col-lg-3">
+					<div class="customDiv">Column2</div>
+				</div>
+				<div class="col-md-3 col-lg-9 ">
+					<div class="customDiv">Column3</div>
+				</div>
+				<div class="col-md-3 col-lg-3">
+					<div class="customDiv">Column4</div>
+				</div>
+			</div>
+			<div class="row "> <!-- Some Bootstrap utilities -->
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<div class="customDiv">ALL Screens</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 hidden-xs">
+					<div class="customDiv">Medium, Large and Small</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 visible-lg visible-md ">
+					<div class="customDiv"><span class="glyphicon glyphicon-search"></span>Medium and Large</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 visible-print">
+					<div class="customDiv">Large</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-7">
+					<div id="accordion" class="panel-group">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panelBodyOne" data-toggle="collapse" data-parent="#accordion">
+									   Asia
+									</a>
+								</h4>
+							</div>
+							<div id="panelBodyOne" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li>India</li>
+										<li>China</li>
+										<li>Japan</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panelBodyTwo" data-toggle="collapse" data-parent="#accordion">
+			
+									   North America
+									</a>
+								</h4>
+							</div>
+							<div id="panelBodyTwo" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<ul>
+										<li>USA</li>
+										<li>Canada</li>
+										<li>Mexico</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panelBodyThree" data-toggle="collapse" data-parent="#accordion">
+									   Europe
+									</a>
+								</h4>
+							</div>
+							<div id="panelBodyThree" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li>England</li>
+										<li>France</li>
+										<li>Spain</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
